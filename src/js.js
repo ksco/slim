@@ -52,6 +52,10 @@ const FUNCTION_TYPES = ['FunctionDeclaration', 'FunctionExpression', 'ArrowFunct
 
 function apply (node) {
   // add `slimInt$apply()` before every function body in node
+  if (!node || !node.type) {
+    return
+  }
+
   for (const key in node) {
     const value = node[key]
     if (typeof value === 'object') {
