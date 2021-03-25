@@ -1,0 +1,24 @@
+<script>
+  let name = ''
+  let time = new Date()
+
+  function upperName() {
+    time = new Date()
+    return name.toUpperCase()
+  }
+</script>
+
+<h1>Guess name</h1>
+<input type="text" bind:value={name} />
+
+<p>You guess: {upperName(name)}</p>
+
+{#if name === 'john'}
+  <p>
+    <strong>YES!!</strong>
+  </p>
+{:else}
+  <p>Noop</p>
+{/if}
+
+<p>{time}</p>

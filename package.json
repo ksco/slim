@@ -1,0 +1,31 @@
+{
+  "name": "slim",
+  "version": "0.0.1",
+  "description": "A naive Svelte compiler, just for learning purpose.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js examples/bind.html && parcel bin/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksco/slim.git"
+  },
+  "author": "ksco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ksco/slim/issues"
+  },
+  "homepage": "https://github.com/ksco/slim#readme",
+  "dependencies": {
+    "acorn": "^7.4.1",
+    "astring": "^1.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1"
+  }
+}
