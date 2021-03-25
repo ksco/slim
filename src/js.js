@@ -25,7 +25,7 @@ export default class Parser {
 
     // put code into `function widget(slimInt$element) { ... }`
     ast.body = [{
-      type: 'ExportDefaultDeclaration', 
+      type: 'ExportDefaultDeclaration',
       declaration: {
         body: {
           type: 'BlockStatement',
